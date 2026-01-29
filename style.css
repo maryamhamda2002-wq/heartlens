@@ -1,0 +1,110 @@
+/* ---------- Entire Page ---------- */
+body, .stApp {
+    background-color: #7c3aed !important;  /* Light purple / mid purple background */
+    font-family: "Helvetica", Arial, sans-serif;
+    color: #ffffff !important;  /* White text everywhere */
+}
+
+/* ---------- Cards / Containers ---------- */
+.stCard, .css-1d391kg {  /* Streamlit cards and input containers */
+    background-color: #5e4b8b !important;  /* Slightly darker purple for cards */
+    padding: 35px !important;
+    border-radius: 25px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
+    margin-bottom: 35px !important;
+    color: #ffffff !important;  /* White text inside cards */
+}
+
+/* ---------- App Title ---------- */
+.title {
+    font-size: 80px !important;
+    font-weight: 900;
+    color: #ffffff !important;  /* White title */
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* ---------- Subtitle ---------- */
+.subtitle {
+    font-size: 32px !important;
+    color: #ffffff !important;  /* White subtitle */
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* ---------- Headings inside cards ---------- */
+.stSubheader, h2, h3, h4 {
+    font-size: 26px !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+/* ---------- Labels & Input Text ---------- */
+label, .css-1oe6wy1, .css-14xtw13 {
+    font-size: 20px !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+/* ---------- Input boxes & select boxes ---------- */
+input, select, .stTextInput>div>input, .stNumberInput>div>input {
+    font-size: 20px !important;
+    color: #ffffff !important;
+    background-color: rgba(255,255,255,0.1) !important; /* Slightly see-through input background */
+    border: 1px solid #ffffff !important;
+    border-radius: 10px !important;
+    padding: 8px !important;
+}
+
+/* ---------- Buttons ---------- */
+button, .stButton>button {
+    background-color: #4b0082 !important;  /* Dark purple buttons */
+    color: #ffffff !important;
+    font-size: 22px !important;
+    padding: 15px 45px !important;
+    border-radius: 15px !important;
+    border: none !important;
+    cursor: pointer;
+    font-weight: 700 !important;
+}
+
+/* ---------- Center Buttons ---------- */
+.button-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------- Risk Text ---------- */
+.risk-low {
+    color: #ffffff !important;  /* White */
+    font-weight: 900 !important;
+    font-size: 28px !important;
+}
+
+.risk-medium {
+    color: #ffffff !important;  /* White */
+    font-weight: 900 !important;
+    font-size: 28px !important;
+}
+
+.risk-high {
+    color: #ffffff !important;  /* White */
+    font-weight: 900 !important;
+    font-size: 28px !important;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    text-align: center !important;
+    color: #ffffff !important;
+    margin-top: 50px !important;
+    padding: 20px !important;
+    font-size: 20px !important;
+}
+
+/* ---------- Extra spacing for readability ---------- */
+.stMarkdown p, .stText {
+    font-size: 20px !important;
+    color: #ffffff !important;
+    line-height: 1.6 !important;
+}
