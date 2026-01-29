@@ -1,32 +1,36 @@
+# utils/predict.py
+
 def lifestyle_risk(age, systolic_bp, cholesterol, active):
-    risk = 0
-    if age > 50:
-        risk += 1
-    if systolic_bp > 140:
-        risk += 1
-    if cholesterol != "Normal":
-        risk += 1
-    if not active:
-        risk += 1
-    if risk <= 1:
-        return "Low"
-    elif risk == 2:
-        return "Medium"
-    else:
-        return "High"
+    """
+    Calculates lifestyle risk based on simple rules.
+    """
+    risk = "Low"
+    if age > 50 or systolic_bp > 140 or cholesterol != "Normal" or not active:
+        risk = "Medium"
+    if age > 65 or systolic_bp > 160 or cholesterol == "Well Above Normal" or not active:
+        risk = "High"
+    return risk
+
 
 def clinical_risk(chest_pain, max_hr):
-    if chest_pain in ["Typical Angina", "Asymptomatic"] or max_hr < 120:
-        return "High"
-    elif max_hr < 140:
-        return "Medium"
-    else:
-        return "Low"
+    """
+    Calculates clinical risk based on chest pain type and max heart rate.
+    """
+    risk = "Low"
+    if chest_pain in ["Typical Angina", "Atypical Angina"] or max_hr < 120:
+        risk = "Medium"
+    if chest_pain == "Typical Angina" and max_hr < 100:
+        risk = "High"
+    return risk
+
 
 def ecg_risk(age, systolic_bp):
-    if age > 50 and systolic_bp > 140:
-        return "High"
-    elif systolic_bp > 130:
-        return "Medium"
-    else:
-        return "Low"
+    """
+    ECG risk based on age and systolic blood pressure.
+    """
+    risk = "Low"
+    if age > 55 or systolic_bp > 150:
+        risk = "Medium"
+    if age > 65 or systolic_bp > 160:
+        risk = "High"
+    return risk
