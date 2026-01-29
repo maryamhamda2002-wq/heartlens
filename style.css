@@ -1,25 +1,25 @@
-/* ---------- Entire Page ---------- */
+/* ---------- Full page ---------- */
 body, .stApp {
-    background-color: #7c3aed !important;  /* Light purple / mid purple background */
+    background-color: #7c3aed !important; /* Purple background */
     font-family: "Helvetica", Arial, sans-serif;
-    color: #ffffff !important;  /* White text everywhere */
+    color: #ffffff !important;
 }
 
 /* ---------- Cards / Containers ---------- */
-.stCard, .css-1d391kg {  /* Streamlit cards and input containers */
-    background-color: #5e4b8b !important;  /* Slightly darker purple for cards */
+.stCard, .css-1d391kg {
+    background-color: #5e4b8b !important; /* Darker purple cards */
     padding: 35px !important;
     border-radius: 25px !important;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
     margin-bottom: 35px !important;
-    color: #ffffff !important;  /* White text inside cards */
+    color: #ffffff !important;
 }
 
-/* ---------- App Title ---------- */
+/* ---------- Title ---------- */
 .title {
     font-size: 80px !important;
-    font-weight: 900;
-    color: #ffffff !important;  /* White title */
+    font-weight: 900 !important;
+    color: #ffffff !important;
     text-align: center;
     margin-top: 50px;
 }
@@ -27,7 +27,7 @@ body, .stApp {
 /* ---------- Subtitle ---------- */
 .subtitle {
     font-size: 32px !important;
-    color: #ffffff !important;  /* White subtitle */
+    color: #ffffff !important;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -46,11 +46,11 @@ label, .css-1oe6wy1, .css-14xtw13 {
     font-weight: 600 !important;
 }
 
-/* ---------- Input boxes & select boxes ---------- */
+/* ---------- Inputs & Selectboxes ---------- */
 input, select, .stTextInput>div>input, .stNumberInput>div>input {
     font-size: 20px !important;
     color: #ffffff !important;
-    background-color: rgba(255,255,255,0.1) !important; /* Slightly see-through input background */
+    background-color: rgba(255,255,255,0.1) !important;
     border: 1px solid #ffffff !important;
     border-radius: 10px !important;
     padding: 8px !important;
@@ -58,7 +58,7 @@ input, select, .stTextInput>div>input, .stNumberInput>div>input {
 
 /* ---------- Buttons ---------- */
 button, .stButton>button {
-    background-color: #4b0082 !important;  /* Dark purple buttons */
+    background-color: #4b0082 !important; /* Dark purple buttons */
     color: #ffffff !important;
     font-size: 22px !important;
     padding: 15px 45px !important;
@@ -68,29 +68,11 @@ button, .stButton>button {
     font-weight: 700 !important;
 }
 
-/* ---------- Center Buttons ---------- */
-.button-center {
-    display: flex;
-    justify-content: center;
-}
-
 /* ---------- Risk Text ---------- */
-.risk-low {
-    color: #ffffff !important;  /* White */
-    font-weight: 900 !important;
+.risk {
     font-size: 28px !important;
-}
-
-.risk-medium {
-    color: #ffffff !important;  /* White */
+    color: #ffffff !important;
     font-weight: 900 !important;
-    font-size: 28px !important;
-}
-
-.risk-high {
-    color: #ffffff !important;  /* White */
-    font-weight: 900 !important;
-    font-size: 28px !important;
 }
 
 /* ---------- Footer ---------- */
@@ -102,7 +84,7 @@ footer {
     font-size: 20px !important;
 }
 
-/* ---------- Extra spacing for readability ---------- */
+/* ---------- Extra spacing for Markdown ---------- */
 .stMarkdown p, .stText {
     font-size: 20px !important;
     color: #ffffff !important;
