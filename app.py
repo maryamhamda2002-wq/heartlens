@@ -1,4 +1,4 @@
-from utils.predict import lifestyle_risk, clinical_risk, ecg_risk
+from predict import lifestyle_risk, clinical_risk, ecg_risk
 import streamlit as st
 
 st.title("❤️ HeartLens - Test App")
